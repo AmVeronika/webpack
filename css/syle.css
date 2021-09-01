@@ -12,11 +12,6 @@
           box-shadow: -9px 9px 29px 0px rgba(206, 145, 132, 0.2);
 }
 
-.modul-one,
-.modul-two {
-  display: none;
-}
-
 .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,7 +30,8 @@
 }
 
 .timer-input {
-  width: 80px;
+  width: 142px;
   height: 35px;
   text-align: center;
+  font-size: 31px;
 }
