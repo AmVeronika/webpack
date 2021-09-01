@@ -9,7 +9,8 @@
    border: 1px solid rgb(219, 206, 206);
    box-shadow: -9px 9px 29px 0px rgba(206, 145, 132, 0.2);
 }
-.modul-one, .modul-two {
+.modul-one,
+.modul-two {
    display: none;
 }
 .buttons {
@@ -22,4 +23,10 @@
    height: 50px;
    background: rgb(199, 85, 85);
    font-weight: 600;
+}
+.timer-input {
+   width: 80px;
+   height: 35px;
+   text-align: center;
+   
 }

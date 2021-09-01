@@ -15,11 +15,10 @@
    <div class="main">
       <form id="buttons" class="buttons">
          <button id="btn-calc" class="button-1 button" type="button">Калькулятор дат</button>
-         <button id="btn-timer" class="button-2 button" type="button">Будильник</button>
+         <button id="btn-timer" class="button-2 button" type="button">Таймер</button>
       </form>
  <!-- КАЛЬКУЛЯТОР ДАТ -->
       <div id="modul-one" class="modul modul-one">
-        
          <form id="datecalc">
             <h3>Калькулятор дат</h3>
             <label>
@@ -34,14 +33,16 @@
             <p id="datecalc__result"></p>
          </form>
       </div>
-      <hr>
+      <!-- ТАЙМЕР -->
       <div id="modul-two" class="modul modul-two">
          <form id="alarmclock">
-            <h3>Будильник</h3>
-            <input id="timeInput" type="time">
-            <button type="submit" id="startTime">Старт</button>
-            <button type="submit" id="pauseTime">Пауза</button>
-            <button type="submit" id="stopTime">Стоп</button>
+            <h3>Таймер, не будильник</h3>
+            <input id="timeHours" type="number" max="60" min="0" placeholder="часы" class="timer-input">
+            <input id="timeMinutes" type="number" max="60" min="0" placeholder="минуты" class="timer-input">
+            <input id="timeSecond" type="number" max="60" min="0"placeholder="секунды" class="timer-input">
+            <button type="button" id="startTime">Старт</button>
+            <button type="button" id="pauseTime">Пауза</button>
+            <button type="reset" id="stopTime">Сброс</button>
          </form>
       </div>
    </div>
