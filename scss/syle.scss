@@ -1,0 +1,25 @@
+.main {
+   max-width: 800px;
+   margin: 50px auto;
+}
+.modul {
+   width: 700px;
+   margin: 50px auto;
+   padding: 15px;
+   border: 1px solid rgb(219, 206, 206);
+   box-shadow: -9px 9px 29px 0px rgba(206, 145, 132, 0.2);
+}
+.modul-one, .modul-two {
+   display: none;
+}
+.buttons {
+   display: flex;
+   min-width: 800px;
+   justify-content: space-between;
+}
+.button {
+   width: 200px;
+   height: 50px;
+   background: rgb(199, 85, 85);
+   font-weight: 600;
+}
