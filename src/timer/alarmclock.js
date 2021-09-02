@@ -1,7 +1,7 @@
 // ТАЙМЕР
 import { valueInput, dataTimeInput } from "./data-time-input.js";
-import { disabledInst, disabledDel } from "./disabled.js";
-import { valueInp, time, timeHours, timeMinutes, timeSeconds, set } from "./value-input.js";
+import { disabledInst } from "./disabled.js";
+import { valueInp, set } from "./value-input.js";
 
 
 const timerInput = document.querySelectorAll('.timer-input')//Массив инпутов со временем
@@ -17,8 +17,9 @@ const inputBtn = document.querySelectorAll('.input-btn')//Массив кноп�
 //-------------Проверка на нажатие кнопки таймера--(1)------------
 //----------------------------------------------------------------
 export function checkTimer() {
-   dataTimeInput(timerInput);//Вызов функции на проверку на введение значения в input
+  
    inputBtn.forEach(btn => {
+      dataTimeInput(timerInput);//Вызов функции на проверку на введение значения в input
       btn.addEventListener("click", timeLapse);//Событие на клик
    })
 }
@@ -26,16 +27,18 @@ export function checkTimer() {
 //---------Функция на нажатие кнопок старт,пауза,стоп--(3)------
 //--------------------------------------------------------------
 function timeLapse(btn) {
+   dataTimeInput(timerInput);//Вызов функции на проверку на введение значения в input
    if (btn.target == startTime) {  //Если старт
       if (valueInput) {
          disabledInst(timerInput);//вызов функции по блокировке ввода инпут
-         valueInp();//Вызов функции получение выбранных значений
+         valueInp(timerInput);//Вызов функции получение выбранных значений, сам таймер
       }
    }
    else if (btn.target == pauseTime) { //Если пауза
       clearTimeout(set);
    } 
    else if (btn.target == stopTime) { //Если сброс
-      location.reload() // window.location.reload()
+      window.location.reload()
+      document.getElementById("modul-two").style.display="block"
    }
 }
