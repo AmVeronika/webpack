@@ -1,0 +1,75 @@
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss ***!
+  \**************************************************************************************************************/
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #060c21;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  max-width: 1000px;
+  width: 100%;
+  margin: 30px auto;
+}
+.main__title {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 35px;
+  padding: 10px;
+}
+.main__wrapp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 20px;
+  background: #060c21;
+  position: relative;
+  text-align: center;
+}
+.main__wrapp::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+}
+.main__wrapp::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(40px);
+}
+.main__wrapp::before, .main__wrapp::after {
+  background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+}
+.main__list {
+  box-sizing: border-box;
+  color: #ffffff;
+  width: 300px;
+  border: 0.2px solid #62626259;
+}
+.main__list-media {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+.main__list audio {
+  filter: sepia(24%) saturate(1%) grayscale(1) contrast(84%) invert(96%);
+}
