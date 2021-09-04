@@ -1,11 +1,12 @@
 import { disabledDel } from "./disabled.js";
+import single from "../../sound.mp3";
 export const timeHours = document.getElementById("timeHours");//Часы
 export const timeMinutes = document.getElementById("timeMinutes");//Минуты
 export const timeSeconds = document.getElementById("timeSecond");//Секунды
 export let set;
 export let time;
 let sound = new Howl({
-   src: ['sound.mp3']
+   src: [single]
 });
 Howler.volume(0.2);
 
