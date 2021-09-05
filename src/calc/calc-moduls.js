@@ -1,5 +1,5 @@
 import { diffDates, diffToHtml } from "./datecalc.js"; // 1
-import { formatError } from "./utils.js"; // 2
+import { formatError } from "../utils.js"; // 2
 
 const dateCalcResult = document.getElementById("datecalc__result");
 export function handleCalcDates(event) {

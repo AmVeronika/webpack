@@ -1,3 +1,4 @@
+import {Howl, Howler} from 'howler';
 import { disabledDel } from "./disabled.js";
 import single from "../../sound.mp3";
 export const timeHours = document.getElementById("timeHours");//Часы
