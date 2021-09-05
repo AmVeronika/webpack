@@ -12,7 +12,8 @@
           box-shadow: -9px 9px 29px 0px rgba(206, 145, 132, 0.2);
 }
 
-.modul-one, .modul-two {
+.modul-one,
+.modul-two {
   display: none;
 }
 
@@ -31,4 +32,11 @@
   height: 50px;
   background: #c75555;
   font-weight: 600;
+}
+
+.timer-input {
+  width: 142px;
+  height: 35px;
+  text-align: center;
+  font-size: 31px;
 }
